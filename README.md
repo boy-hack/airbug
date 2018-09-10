@@ -9,3 +9,6 @@ Airbug(空气洞),一个长期开放用于收集漏洞poc以及详情的学习�
 POC内容用`poc(arg,**kwargs)`函数封装，不关注其他细节。
 - 当poc验证成功时可返回文本或`Ture`或字典
 - 若poc验证失败，返回`None`或`False`即可
+
+## 参考
+- [https://github.com/Lucifer1993/AngelSword](https://github.com/Lucifer1993/AngelSword)
