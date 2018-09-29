@@ -1,12 +1,6 @@
 # Author:w8ay
 # Name:测试DEMO
 
-
-def assign(service, arg):
-    if service == "www":
-        return True, arg
-
-
 def poc(arg, **kwargs):
     result = {
         "name": "Demo插件",  # 插件名称
