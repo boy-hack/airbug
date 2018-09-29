@@ -7,8 +7,37 @@ Airbug(空气洞),一个长期开放用于收集漏洞poc以及详情的学习�
 
 ## Poc文件格式
 POC内容用`poc(arg,**kwargs)`函数封装，不关注其他细节。
-- 当poc验证成功时可返回文本或`Ture`或字典
-- 若poc验证失败，返回`None`或`False`即可
+- 当poc验证成功时可返回文本或`Ture`或字典,为了返回详细信息，推荐使用字典返回形式
+- 若poc验证失败，返回`None`或`False`即可  
+
+```python
+# Author:w8ay
+# Name:测试DEMO
+
+
+def assign(service, arg):
+    if service == "www":
+        return True, arg
+
+
+def poc(arg):
+    result = {
+        "name": "Demo插件",  # 插件名称
+        "content": "如果这个插件能显示出来，就说明w12scan框架测试成功了",  # 插件返回内容详情，会造成什么后果。
+        "url": arg,  # 漏洞存在url
+        "log": {
+            "send": "send",
+            "response": "response"
+        },
+        "tag": "demo"  # 漏洞标签
+    }
+    return result
+
+
+if __name__ == "__main__":
+    pass
+
+```
 
 ## 参考
 - [https://github.com/Lucifer1993/AngelSword](https://github.com/Lucifer1993/AngelSword)
