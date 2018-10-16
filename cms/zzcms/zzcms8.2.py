@@ -18,7 +18,7 @@ def poc(arg, **kwargs):
     if hh.status_code == 200 and time.time() - startTime > 5:
         result = {
             "name": "zzscms 8.2 sqli_inject",  # 插件名称
-            "content": "zzcms v8.2 /user/del.php 存在SQL Inject",  # 插件返回内容详情，会造成什么后果。
+            "content": "zzcms v8.2 /user/del.php 存在SQL Inject,referer:http://www.freebuf.com/vuls/161888.html",  # 插件返回内容详情，会造成什么后果。
             "url": url,  # 漏洞存在url
             "log": hh.log,
             "tag": "sqli"  # 漏洞标签
