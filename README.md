@@ -6,7 +6,7 @@ Airbug(空气洞),一个长期开放用于收集漏洞poc以及详情的学习�
 - 因为使用了`hack-requests`，需要安装 `pip3 install HackRequests`
 
 ## Poc文件格式
-POC内容用`poc(arg,**kwargs)`函数封装，不关注其他细节。
+POC插件的格式设计崇尚简单易用，所有内容只需要用`poc(arg,**kwargs)`函数封装即可，不关注其他细节。
 - 当poc验证成功时可返回文本或`Ture`或字典,为了返回详细信息，推荐使用字典返回形式
 - 若poc验证失败，返回`None`或`False`即可  
 
