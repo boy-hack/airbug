@@ -6,6 +6,12 @@
         "time": "2018-09-29 15:52:15"
     },
     {
+        "name": "zzcms",
+        "type": "cms",
+        "filepath": "/cms/zzcms/zzcms8.2.py",
+        "time": "2018-10-16 10:29:46"
+    },
+    {
         "name": "phpcms",
         "type": "cms",
         "filepath": "/cms/phpcms/phpcms_product_code_exec.py",
@@ -110,6 +116,12 @@
     {
         "name": "dedecms",
         "type": "cms",
+        "filepath": "/cms/dedecms/dedecms_shortpath.py",
+        "time": "2018-11-18 10:14:11"
+    },
+    {
+        "name": "dedecms",
+        "type": "cms",
         "filepath": "/cms/dedecms/dedecms_trace.py",
         "time": "2018-09-29 16:32:55"
     },
@@ -146,8 +158,20 @@
     {
         "name": "emlog",
         "type": "cms",
+        "filepath": "/cms/emlog/emlog_realpath_leak.py",
+        "time": "2018-11-18 20:19:12"
+    },
+    {
+        "name": "emlog",
+        "type": "cms",
         "filepath": "/cms/emlog/emlog_database_download.py",
         "time": "2018-10-01 15:11:23"
+    },
+    {
+        "name": "siteserver",
+        "type": "cms",
+        "filepath": "/cms/siteserver/sqli_inject.py",
+        "time": "2018-10-26 20:54:49"
     },
     {
         "name": "beescms",
@@ -166,6 +190,12 @@
         "type": "cms",
         "filepath": "/cms/empirecms/list_sqli.py",
         "time": "2018-10-02 19:31:28"
+    },
+    {
+        "name": "apple",
+        "type": "hardware",
+        "filepath": "/hardware/apple/CVE-2018-4407/CVE-2018-4407.py",
+        "time": "2018-11-01 20:53:52"
     },
     {
         "name": "weblogic",
