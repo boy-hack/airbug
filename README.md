@@ -33,6 +33,18 @@ if __name__ == "__main__":
 
 ```
 
+### 参数传递
+
+在调用poc函数时，有的poc需要传递多个参数，这里统一约定
+
+| 序号 | 参数 | 解释        |
+| ---- | ---- | ----------- |
+| 1    | arg  | 传递一个url |
+| 2    | ip   | 传递ip      |
+| 3    | port | 传递端口    |
+
+arg参数是必须的，如果有些情况只需要ip和端口，将arg置空，poc中读取ip，port即可，参考[system/iis/iis_webdav.py](system/iis/iis_webdav.py)
+
 ## 参考
 - [https://github.com/Lucifer1993/AngelSword](https://github.com/Lucifer1993/AngelSword)
 - [https://github.com/vulhub/vulhub](https://github.com/vulhub/vulhub)
