@@ -4,6 +4,11 @@ Airbug(空气洞),一个长期开放用于收集漏洞poc以及详情的学习�
 所有POC文件按照一定格式编写，且支持python3.x，为了方便操作，Airbug平台所有网络访问需要使用[黑客们使用的http底层网络库 - hack-requests](https://github.com/boy-hack/hack-requests)引擎编写。  
 
 - 因为使用了`hack-requests`，需要安装 `pip3 install HackRequests`
+### 目录结构
+- cms 存放cms相关漏洞
+- common 存放通用漏洞
+- hardware 存放硬件漏洞
+- system 存放一些系统的漏洞
 
 ## Poc文件格式
 POC插件的格式设计崇尚简单易用，所有内容只需要用`poc(arg,**kwargs)`函数封装即可，不关注其他细节。
