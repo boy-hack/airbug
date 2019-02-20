@@ -52,7 +52,7 @@ arg参数是必须的，如果有些情况只需要ip和端口，将arg置空，
 
 ## 调用
 
-airbug提供[API.json](API.json) 根据python的灵活性，可以在线调用，参考案例[w12scan](https://github,com/boy-hack/w12scan)
+airbug提供[API.json](API.json) 根据python的灵活性，可以在线调用，参考案例[w12scan](https://github.com/boy-hack/w12scan)
 
 ## 参考
 - [https://github.com/Lucifer1993/AngelSword](https://github.com/Lucifer1993/AngelSword)
