@@ -282,6 +282,12 @@
         "time": "2019-02-20 16:08:38"
     },
     {
+        "name": "confluence",
+        "type": "system",
+        "filepath": "/system/confluence/CVE-2019-3396.py",
+        "time": "2019-04-07 23:13:48"
+    },
+    {
         "name": "zabbix",
         "type": "system",
         "filepath": "/system/zabbix/zabbix_jsrpc_profileIdx2_sqli.py",
