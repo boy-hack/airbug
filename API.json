@@ -224,6 +224,12 @@
     {
         "name": "weblogic",
         "type": "system",
+        "filepath": "/system/weblogic/cve-2019-2725.py",
+        "time": "2019-05-14 10:44:34"
+    },
+    {
+        "name": "weblogic",
+        "type": "system",
         "filepath": "/system/weblogic/weblogic_interface_disclosure.py",
         "time": "2018-10-03 11:55:44"
     },
