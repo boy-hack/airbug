@@ -114,7 +114,7 @@ def run_airbug(target: str, keywords: list):
             print("load poc error:{} error:{}".format(target, str(e)))
         if ret:
             collector.append(ret)
-    print("over..")
+    print("over.")
     return collector
 
 
@@ -129,7 +129,7 @@ def main():
             if arg == "-u":
                 target = argv[index + 1]
             if arg == "-r":
-                keywords = argv[index + 2].split(",")
+                keywords = argv[index + 1].split(",")
         except IndexError:
             print(msg_help)
             return
@@ -137,7 +137,7 @@ def main():
     if target and keywords:
         ret = run_airbug(target, keywords)
         if not ret:
-            print("nothing..")
+            print("nothing.")
         for i in ret:
             print(i)
     else:
