@@ -17,8 +17,7 @@ except ImportError:
     exit()
 
 WEB_REPOSITORY = "https://github.com/boy-hack/airbug"
-Hack = HackRequests.hackRequests()
-PocQueue = []
+HACK = HackRequests.hackRequests()
 
 
 def get_md5(value):
@@ -76,7 +75,7 @@ def load_remote_poc():
     suffix = "/API.json"
     prefix = WEB_REPOSITORY.replace("github.com", "raw.githubusercontent.com")
     _api = prefix + middle + suffix
-    hh = Hack.http(_api)
+    hh = HACK.http(_api)
     data = json.loads(hh.text(), encoding='utf-8')
     for _ in data:
         _["webfile"] = prefix + middle + _["filepath"]
@@ -84,6 +83,7 @@ def load_remote_poc():
 
 
 def run_airbug(target: str, keywords: list):
+    PocQueue = []
     print("load poc from airbug repository")
     pocs = load_remote_poc()
     for poc in pocs:
@@ -92,7 +92,7 @@ def run_airbug(target: str, keywords: list):
                 webfile = poc["webfile"]
                 msg = "load {0} poc:{1} poc_time:{2}".format(poc["type"], webfile, poc["time"])
                 print(msg)
-                code = Hack.http(webfile).text()
+                code = HACK.http(webfile).text()
                 obj = load_string_to_module(code, webfile)
                 PocQueue.append((target, obj))
     print("Start to run poc")
