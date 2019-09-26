@@ -258,6 +258,12 @@
         "time": "2019-02-20 16:01:39"
     },
     {
+        "name": "phpstudy",
+        "type": "system",
+        "filepath": "/system/phpstudy/phpstudy_backdoor.py",
+        "time": "2019-09-26 20:58:37"
+    },
+    {
         "name": "php",
         "type": "system",
         "filepath": "/system/php/expose_php.py",
